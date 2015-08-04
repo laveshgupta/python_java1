@@ -1,0 +1,15 @@
+cluster.name: ${CLUSTER_NAME}
+node.name: ${NODE_NAME}
+node.tag: ${NODE_NAME}
+node.rack: ${NODE_NAME}
+node.master: ${MASTER_FLAG}
+node.data: ${DATA_FLAG}
+path.data: /esdata/decrypted/data
+path.logs: /esdata/decrypted/logs
+bootstrap.mlockall: true
+http.max_content_length: 500mb
+http.max_initial_line_length: 100kB
+http.max_header_size: 100kB
+http.max_chunk_size: 100kB
+discovery.zen.ping.multicast.enabled: true
+discovery.zen.ping.unicast.hosts: ${MASTER_NODE_IP}
